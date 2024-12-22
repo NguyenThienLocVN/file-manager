@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>File Manager</title>
-</head>
-<body>
-    <h1>File Manager</h1>
+@extends('layouts.app')
+
+@section('content')
     
     @if (session('success'))
         <p>{{ session('success') }}</p>
@@ -29,5 +25,4 @@
             </li>
         @endforeach
     </ul>
-</body>
-</html>
+@endsection
